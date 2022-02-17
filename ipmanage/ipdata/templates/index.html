@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% block title %}IPData - MundoDevOps{% endblock %}
+{% block body %}
+    <div class="container">
+        <br>
+        <br>
+        <h1>IPData - uma API Django</h1>
+        <br>
+        <br>
+        <form action="{% url 'index' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>No campo abaixo, insira um IP de formato válido:</label>
+                <input type="text"
+                       minlength="7"
+                       maxlength="13"
+                       size="113"
+                       pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$"
+                       class="form-control"
+                       name="search"
+                       placeholder="Digite o IP">
+                       {{ erros.vazio }}
+                       {{ erros.invalido }}
+                       {{ erros.reservado }}
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Buscar IP">
+                    <a class="btn btn-info" href="{% url 'log' %}">Histórico de buscas</a>
+                </form>
+                <br>
+        <div>
+            <p>INFORMAÇÕES SOBRE O IP:</p>
+            <li>
+                País: <b>{{ data.country }}</b>
+            </li>
+            <li>
+                Código do país: <b>{{ data.countryCode }}</b>
+            </li>
+            <li>
+                Região do país: <b>{{ data.region }}</b>
+            </li>
+            <li>
+                Nome da região: <b>{{ data.regionName }}</b>
+            </li>
+            <li>
+                Cidade: <b>{{ data.city }}</b>
+            </li>
+            <li>
+                CEP: <b>{{ data.zip }}</b>
+            </li>
+            <li>
+                Latitude: <b>{{ data.lat }}</b>
+            </li>
+            <li>
+                Longitude: <b>{{ data.lon }}</b>
+            </li>
+            <li>
+                Fuso horário: <b>{{ data.timezone }}</b>
+            </li>
+            <li>
+                Provedor: <b>{{ data.isp }}</b>
+            </li>
+            <li>
+                Organização: <b>{{ data.org }}</b>
+            </li>
+            <li>
+                Pacote de endereços: <b>{{ data.as }}</b>
+            </li>
+        </div>
+        <br>
+    </div>
+{% endblock %}
