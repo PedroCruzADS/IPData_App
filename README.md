@@ -30,6 +30,10 @@
 	- Porque executar esses comandos?
 	   - Devemos mudar nosso diretório para a pasta da aplicação, então criamos as bases de dados onde vamos armazenar as informações dos IP's que os usuários irão pesquisar usando um comando próprio do Django chamado migrate, simplificadamente falando, e então finalmente executamos `runserver` para que o servidor local do projeto esteja sendo executado no seu localhost de porta 8000. 
 	   - `localhost:8000`
+	   
+• Observação: 
+   - Estamos usando o banco de dados padrão do Django (sqlite3), então: 
+     • Você não deve se preocupar em instalar nada relacionado a persistência de dados.
 
 
 
