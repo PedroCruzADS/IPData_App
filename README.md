@@ -18,3 +18,26 @@
    • Seu ambiente virtual estará sendo utilizado se você estiver com um ***venv*** no seu terminal.
    • Finalmente, agora podemos instalar as dependências usando o requirements.txt do projeto:
     - pip install -r requirements.txt
+  
+   • Seguindo todas as instruções, seu terminal deve se parecer com o meu:
+     ![.](https://i.ibb.co/nmQqfcQ/Captura-de-tela-2022-02-17-000105.png)
+• Após tudo ter sido instalado, escreva os seguintes comandos no terminal:
+
+		cd ipmanage
+		python manage.py migrate
+		python manage.py runserver
+		
+	- Porque executar esses comandos?
+	   - Devemos mudar nosso diretório para a pasta da aplicação, então criamos as bases de dados onde vamos armazenar as informações dos IP's que os usuários irão pesquisar usando um comando próprio do Django chamado migrate, simplificadamente falando, e então finalmente executamos `runserver` para que o servidor local do projeto esteja sendo executado no seu localhost de porta 8000. 
+	   - `localhost:8000`
+
+
+
+
+###  - Telas do IPData - 
+
+Tela principal
+![Tela principal](https://i.ibb.co/9v0C1jM/Principal.png)
+
+Tela de histórico
+![enter image description here](https://i.ibb.co/VpRJ6Fm/Log.png)
