@@ -32,8 +32,7 @@
 	   - `localhost:8000`
 	   
 • Observação: 
-   - Estamos usando o banco de dados padrão do Django (sqlite3), então: 
-     • Você não deve se preocupar em instalar nada relacionado a persistência de dados.
+   - Estamos usando o banco de dados padrão do Django (sqlite3), então você não deve se preocupar em instalar nada relacionado a persistência de dados.
 
 
 
