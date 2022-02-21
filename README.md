@@ -7,7 +7,7 @@
 • Para que você consiga executar o código em sua máquina, é necessário que você tenha a linguagem [Python](https://www.python.org/downloads/) instalada em seu computador, de preferência versões 3.x.
 - Após isso, clone o projeto através do endereço HTTPS, SSH ou apenas baixe e descompacte o ZIP do projeto.
 - Feito isso, abra o projeto em sua IDE favorita ( recomendo [Visual Studio Code](https://code.visualstudio.com/) )
- ![](https://i.ibb.co/zrrVy8P/estrutura.png)
+ ![](https://i.ibb.co/zrrVy8P/estrutura.png)<br>
 • Com o projeto aberto em sua IDE nessa estrutura, abra um console de sua preferência e digite o seguinte comando: 
 
 		`python -m venv venv`
@@ -47,3 +47,4 @@ Tela principal
 
 Tela de histórico
 ![Tela do histórico](https://i.ibb.co/0Y08v6x/log.png)
+
