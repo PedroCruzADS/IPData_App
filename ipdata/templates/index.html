@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block title %}IPData - MundoDevOps{% endblock %}
+{% block body %}
+    <div class="container">
+        <br>
+        <br>
+        <h1>IPData - uma API Django</h1>
+        <br>
+        <br>
+        <form action="{% url 'index' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>No campo abaixo, insira um IP de formato válido:</label>
+                <input type="text"
+                       minlength="7"
+                       maxlength="13"
+                       size="113"
+                       pattern="^((\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.){3}(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$"
+                       class="form-control"
+                       name="search"
+                       placeholder="Digite o IP">
+                       <font color='red'>{{ erros.vazio }}</font>
+                       <font color='red'>{{ erros.invalido }}</font>
+                       <font color='red'>{{ erros.reservado }}</font>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Buscar IP">
+                    <a class="btn btn-info" href="{% url 'log' %}">Histórico de buscas</a>
+                </form>
+                <br>
+        <div>
+        <h2>INFORMAÇÕES DO IP <font color="green">{{ data.query}}</font>:</h2>
+        <table border = "3" cellpadding = "10" cellspacing = "5" style="width: 100%">
+          <tr>
+            <th><b>País:</b></th>
+            <td>{{data.country}}</td>
+          </tr>
+          <tr>
+            <th><b>Sigla:</b></th>
+            <td>{{data.countryCode}}</td>
+          </tr>
+          <tr>
+            <th><b>Região:</b></th>
+            <td>{{data.region}}</td>
+          </tr>
+          <tr>
+            <th><b>Cidade:</b></th>
+            <td>{{data.city}}</td>
+          </tr>
+          <tr>
+            <th><b>CEP:</b></th>
+            <td>{{data.zip}}</td>
+          </tr>
+          <tr>
+            <th><b>Latitude:</b></th>
+            <td>{{data.lat}}</td>
+          </tr>
+          <tr>
+            <th><b>Longitude:</b></th>
+            <td>{{data.lon}}</td>
+          </tr>
+          <tr>
+            <th><b>Fuso horário:</b></th>
+            <td>{{data.timezone}}</td>
+          </tr>
+          <tr>
+            <th><b>Provedor:</b></th>
+            <td>{{data.isp}}</td>
+          </tr>
+          <tr>
+            <th><b>Organização:</b></th>
+            <td>{{data.org}}</td>
+          </tr>
+          <tr>
+            <th><b>Pacote de endereços:</b></th>
+            <td>{{data.as}}</td>
+          </tr>
+          <caption>Essa aplicação usa IP-API de geolocalização</caption>
+        </table>
+        <a class="btn btn-info" href="http://ip-api.com/">Site da API</a>
+        <br>
+    </div>
+{% endblock %}
