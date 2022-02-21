@@ -37,7 +37,7 @@
 	   
 • Observação: 
    - Estamos usando o banco de dados padrão do Django (sqlite3), então você não deve se preocupar em instalar nada relacionado a persistência de dados.
-
+   - Foi usada a configuração padrão da api IP-API portanto a linguagem nativa dos dados recebidos é a língua inglesa, mas por questões de visualização e aprimoramento pessoal, escolhi filtrar e traduzir certos tipos de dado via código e bibliotecas da linguagem Python, sendo que poderia ser feita apenas adicionando paramêtros opcionais no link de pesquisa de IP na própria API que os dados estão sendo consumidos.
 
 
 
