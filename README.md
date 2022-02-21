@@ -13,7 +13,7 @@
 		python -m venv venv
 
 	• Dessa forma, você criou um ambiente virtual e assim pode instalar as dependências necessárias para a execução do projeto sem que tenham conflito com outras já instaladas de sua máquina.
-• Para acessar o ambiente virtual criado, digite no console: 
+	• Para acessar o ambiente virtual criado, digite no console: 
 	 - Caso você esteja usando PowerShell: *venv/Scripts/activate.ps1* 
 	 - Caso você esteja usando CMD: *venv/Scripts/activate.bat* 
 	 - Caso você esteja usando shell Linux: *venv/Scripts/activate* 
