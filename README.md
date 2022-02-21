@@ -24,7 +24,7 @@
     - `pip install -r requirements.txt`
   
    • Seguindo todas as instruções, seu terminal deverá se parecer com o meu:
-     ![.](https://i.ibb.co/nmQqfcQ/Captura-de-tela-2022-02-17-000105.png)
+     ![.](https://i.ibb.co/nmQqfcQ/Captura-de-tela-2022-02-17-000105.png)<br>
 • Após tudo ter sido instalado, escreva os seguintes comandos no terminal:
 
 		python manage.py migrate 
@@ -47,4 +47,3 @@ Tela principal
 
 Tela de histórico
 ![Tela do histórico](https://i.ibb.co/0Y08v6x/log.png)
-
