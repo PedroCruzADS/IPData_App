@@ -10,7 +10,7 @@
  ![](https://i.ibb.co/zrrVy8P/estrutura.png)<br>
 • Com o projeto aberto em sua IDE nessa estrutura, abra um console de sua preferência e digite o seguinte comando: 
 
-		`python -m venv venv`
+		python -m venv venv
 
 	• Dessa forma, você criou um ambiente virtual e assim pode instalar as dependências necessárias para a execução do projeto sem que tenham conflito com outras já instaladas de sua máquina.
 • Para acessar o ambiente virtual criado, digite no console: 
