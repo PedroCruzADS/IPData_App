@@ -26,12 +26,13 @@
    • Seguindo todas as instruções, seu terminal deverá se parecer com o meu:
      ![.](https://i.ibb.co/nmQqfcQ/Captura-de-tela-2022-02-17-000105.png)<br>
 • Após tudo ter sido instalado, escreva os seguintes comandos no terminal:
-
+		
+		python manage.py makemigrations
 		python manage.py migrate 
 		python manage.py runserver
 		
 	- Porque executar esses comandos?
-	   - Criamos as bases de dados onde vamos armazenar as informações dos IP's que os usuários irão pesquisar usando um comando próprio do Django chamado migrate, simplificadamente falando, e então finalmente executamos `runserver` para que o servidor local do projeto esteja sendo executado no seu localhost de porta 8000. 
+	   - Passamos um comando para criar as bases de dados pré-definidas com o makemigrations, então criamos as tabelas usando migrate, e então finalmente executamos `runserver` para que o servidor local do projeto esteja sendo executado no seu localhost de porta 8000. 
 	   - `localhost:8000`
 	   
 • Observação: 
