@@ -1,4 +1,3 @@
-# Mundo DevOps - Code Challenge #
 ## IPData - Busca, localização e histórico de pesquisa de IP's
 
 
